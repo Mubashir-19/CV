@@ -1,0 +1,133 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(243, 243, 243);
+    color: rgb(75, 75, 75);
+    font-size: 11px;
+}
+
+.main{
+    display: flex;
+}
+
+.container{
+    width: 50%;
+}
+
+
+.projects-main{
+    height: 50%;
+}
+
+.proj{
+    display: flex;
+    justify-content: space-around;
+}
+.p{
+    width: 30%;
+    height: 400px;
+    background-color: rgb(236, 236, 236);
+
+}
+
+#education{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(194, 194, 194);
+    margin: 20px;
+    background-color: rgb(236, 236, 236);
+}
+
+#education .ed{
+    width: 35%;
+    
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-left: 2px dotted rgb(168, 168, 168);
+    border-right: 2px dotted rgb(168, 168, 168);
+}
+
+
+#edu-main {
+    background-color: rgb(224, 224, 224);
+    padding: 20px;
+    padding-bottom: 60px;
+    margin: 20px;
+}
+
+.fas {
+    width: 7%;
+    align-self:center; 
+    text-align: center;
+}
+#heading {
+    margin-left: 6%;
+    background-color: royalblue;
+    color: rgb(236, 236, 236);
+    padding: 10px 17px;
+    display: block;
+    width: max-content;
+}
+
+.intro.a{
+    margin-left: 60px;
+    font-weight:600;
+    width: 30%;
+    padding: 2.5%;
+    margin: 2.5%;
+    background-color: rgb(236, 236, 236);
+}
+.intro.b{
+    width: 60%;
+    padding: 2.5%;
+    margin: 2.5%;
+    background-color: rgb(236, 236, 236);
+}
+
+#Introduction {
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        display: initial;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #education {
+        display: initial;
+        border: initial;
+        background-color: rgb(224, 224, 224);
+        
+    }
+    #education .ed {
+        width: 60%;
+        margin: auto;
+        background-color: white;
+    }
+    .fas{
+        transform: rotate(90deg);
+        align-self: initial;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+
+
+    }
+    .proj{
+        flex-flow: column;
+
+    }
+
+    .p{
+        
+        width: 100%;
+        margin-top: 10px;
+    }
+}
